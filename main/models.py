@@ -6,4 +6,4 @@ class Task(models.Model):
     time = models.IntegerField(name='time')
 
     def __str__(self):
-        return self.text
+        return self.name
