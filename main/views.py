@@ -5,20 +5,20 @@ from django.views.generic import DeleteView, DetailView, UpdateView
 
 class TaskDetailView(DetailView):
     model = Task
-    template_name = 'detail_view.html'
+    template_name = 'main/detail_view.html'
     context_object_name = 'article'
 
 
 class TaskUpdateView(UpdateView):
     model = Task
-    template_name = 'create.html'
+    template_name = 'main/create.html'
     form_class = TaskForm
 
 
 class TaskDeleteView(DeleteView):
     model = Task
     success_url = 'task_detail'
-    template_name = 'deletetask.html'
+    template_name = 'main/deletetask.html'
 
 
 def index(request):
