@@ -18,6 +18,8 @@
 <h2>Создать задачу.</h2>
 <form method="post" class="col-md-4">
     {% csrf_token %}
+
+   э
     {{ form.task_name }}
     {{ form.text }}
     <input type="datetime-local" placeholder="Введите дату" class="form-control"><br>

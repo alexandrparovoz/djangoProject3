@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Создать задачу.</h2>
+<form method="post" class="col-md-4">
+    {% csrf_token %}
+    <p><input type="text" name="name" placeholder="Введите название задачи"></p>
+    <p><input type="text" name="text" placeholder="Текст задачи"></p>
+  <!--  <input type="datetime-local" placeholder="Введите дату" class="form-control"><br> -->
+    <button type="submit" class="btn btn-success"><b>Добавить</b></button>
+</form>
+</body>
+</html>
